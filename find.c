@@ -28,3 +28,4 @@ int main()
 	
 	printf("the value:%d is at %dth positon in array\n",val,findval(val,DIM(array)));
 }
+ff
