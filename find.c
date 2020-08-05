@@ -29,7 +29,7 @@ int findval(int val,int length)
 
 int main()
 {
-	int val = 4356;
+	int val = 14356;
 	
 	printf("the value:%d is at %dth positon in array\n",val,findval(val,DIM(array)));
 }
