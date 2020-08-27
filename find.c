@@ -9,22 +9,18 @@
 int array[] = {1,2,33,44,23,456,77,5,8,9,0,123,543};
 int findval(int val,int length)
 {
-	int pos,tmp;
-	unsigned char flag = 0;
+	int pos = -1,tmp;
 	for(int i=0;i<length;i++)
 	{
 		tmp = val^array[i];
 		if(0==tmp)
 		{	//printf(i)
-			pos = i;
+			pos = i+1;
 			flag = 1;
 			break;
 		}
 	}
-	if(1==flag)
 	return pos;
-	else
-	return -1;
 }
 
 int main()
